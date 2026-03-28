@@ -1,8 +1,5 @@
-// script.js - Dr. Tahir Homeopathic Clinic
-
 document.addEventListener('DOMContentLoaded', () => {
     
-    // Navbar Scroll Effect
     const navbar = document.getElementById('navbar');
     
     window.addEventListener('scroll', () => {
@@ -13,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Mobile Menu Toggle
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     
@@ -24,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
             : '<i class="fas fa-bars"></i>';
     });
 
-    // Close mobile menu when clicking a link
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
@@ -32,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Scroll Reveal Animation using Intersection Observer
     const reveals = document.querySelectorAll('.reveal');
 
     const revealOptions = {
@@ -55,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
         revealOnScroll.observe(reveal);
     });
 
-    // Form Validation & Submission Handling
     const consultForm = document.getElementById('consultForm');
     const formStatus = document.getElementById('formStatus');
 
@@ -74,9 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Simple simulation of submission since access key is a placeholder
-            // In a real scenario with a valid access key, you would allow the default submission or use fetch
-            
             formStatus.textContent = 'Sending request...';
             formStatus.style.color = '#2b7a78';
             formStatus.style.marginTop = '10px';
@@ -101,7 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .catch(error => {
                 console.log(error);
-                // If it fails (likely due to invalid placeholder key), show a friendly message for the demo
                 formStatus.textContent = "Note: Form submission disabled as it uses a placeholder key. In production, this would send an email.";
                 formStatus.style.color = '#e67e22';
             });

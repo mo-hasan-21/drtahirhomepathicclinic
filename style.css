@@ -1,11 +1,9 @@
-/* style.css - Dr. Tahir Homeopathic Clinic*/
-
 :root {
-    --primary-color: #2b7a78; /* Soothing teal */
-    --secondary-color: #3aae1f; /* Medical green */
-    --accent-color: #def2f1; /* Light cyan */
-    --dark-bg: #17252a; /* Deep charcoal teal */
-    --light-bg: #f8faf9; /* Off white */
+    --primary-color: #2b7a78;
+    --secondary-color: #3aae1f;
+    --accent-color: #def2f1;
+    --dark-bg: #17252a;
+    --light-bg: #f8faf9;
     --text-main: #333333;
     --text-muted: #666666;
     --white: #ffffff;
@@ -76,7 +74,6 @@ ul {
     color: var(--primary-color);
 }
 
-/* Navbar */
 nav {
     position: fixed;
     top: 0;
@@ -153,7 +150,6 @@ nav.scrolled .hamburger {
     color: var(--primary-color);
 }
 
-/* Home Banner / Hero */
 .hero {
     height: 100vh;
     background: url('assets/banner.jpg') no-repeat center center/cover;
@@ -201,7 +197,6 @@ nav.scrolled .hamburger {
     margin-bottom: 60px;
 }
 
-/* Quick Overview Cards */
 .quick-overview {
     display: flex;
     justify-content: space-between;
@@ -240,7 +235,6 @@ nav.scrolled .hamburger {
     margin: 0;
 }
 
-/* Sections Global */
 section {
     padding: 100px 20px;
     max-width: 1200px;
@@ -262,7 +256,6 @@ section {
     color: var(--text-muted);
 }
 
-/* Consultation Section */
 .consultation {
     background-color: var(--white);
     border-radius: 20px;
@@ -304,7 +297,6 @@ section {
     font-size: 1.2rem;
 }
 
-/* Form Styles */
 .form-group {
     margin-bottom: 20px;
 }
@@ -339,7 +331,6 @@ section {
     font-size: 1.1rem;
 }
 
-/* About Section */
 .about {
     border-bottom: 1px solid #eaeaea;
 }
@@ -404,7 +395,6 @@ section {
     font-size: 1.1rem;
 }
 
-/* Contact Section */
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -474,7 +464,6 @@ section {
 .social-icon.instagram:hover { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; }
 .social-icon.whatsapp:hover { background-color: #25d366; color: white; }
 
-/* Footer */
 footer {
     background-color: var(--dark-bg);
     color: var(--white);
@@ -504,7 +493,6 @@ footer {
     padding-top: 20px;
 }
 
-/* Animations */
 .reveal {
     opacity: 0;
     transform: translateY(30px);
@@ -516,7 +504,6 @@ footer {
     transform: translateY(0);
 }
 
-/* Responsive */
 @media (max-width: 992px) {
     .consultation-content, .about-container, .contact-wrapper {
         grid-template-columns: 1fr;
@@ -560,5 +547,87 @@ footer {
 
     .hero-buttons {
         flex-direction: column;
+    }
+
+    .experience-badge {
+        width: 100px;
+        height: 100px;
+        bottom: -15px;
+        right: -15px;
+        padding: 15px;
+        border-width: 3px;
+    }
+
+    .experience-badge .years {
+        font-size: 1.5rem;
+    }
+
+    .experience-badge .text {
+        font-size: 0.7rem;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .consultation {
+        padding: 40px 20px;
+    }
+
+    .consultation-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .experience-badge {
+        width: 80px;
+        height: 80px;
+        bottom: -10px;
+        right: -10px;
+        padding: 10px;
+    }
+
+    .experience-badge .years {
+        font-size: 1.2rem;
+    }
+
+    .experience-badge .text {
+        display: none;
+    }
+
+    .about-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-item .icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        margin-right: 15px;
+    }
+
+    .consultation {
+        padding: 30px 15px;
     }
 }
