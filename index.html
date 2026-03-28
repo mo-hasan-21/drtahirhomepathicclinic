@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dr. Tahir Homeopathic Clinic - Premium holistic care for your well-being.">
+    <title>Dr. Tahir Homeopathic Clinic</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Dr. Tahir <span>Clinic</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#consultation">Consultation</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Banner Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <h1>Natural Healing for a Better Life</h1>
+            <p>Experience holistic homeopathic treatments tailored to your unique needs.</p>
+            <div class="hero-buttons">
+                <a href="#consultation" class="btn btn-primary">Book a Consultation</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+            
+            <div class="quick-overview">
+                <div class="overview-item">
+                    <i class="fas fa-user-md"></i>
+                    <h3>Expert Care</h3>
+                    <p>Years of experience in homeopathic healing.</p>
+                </div>
+                <div class="overview-item">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Natural Remedies</h3>
+                    <p>Safe, side-effect-free completely natural medicines.</p>
+                </div>
+                <div class="overview-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Local Clinic</h3>
+                    <p>Visit us in person for a detailed checkup.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Consultation Section -->
+    <section id="consultation" class="consultation">
+        <div class="section-header reveal">
+            <h2>Book a Consultation</h2>
+            <p>Schedule your appointment online and start your healing journey.</p>
+        </div>
+        <div class="consultation-content reveal">
+            <div class="consultation-info">
+                <h3>Why Consult Us?</h3>
+                <p>We provide in-depth analysis of your symptoms to prescribe the most effective homeopathic remedies. Every patient gets personalized attention.</p>
+                <ul class="benefits">
+                    <li><i class="fas fa-check-circle"></i> Detailed Case Study</li>
+                    <li><i class="fas fa-check-circle"></i> Personalized Medicine</li>
+                    <li><i class="fas fa-check-circle"></i> Follow-up Support</li>
+                </ul>
+            </div>
+            <div class="consultation-form-wrapper">
+                <!-- Using web3forms as a placeholder for email sending. User can replace the access key -->
+                <form id="consultForm" action="https://api.web3forms.com/submit" method="POST" class="form">
+                    <!-- Replace YOUR_ACCESS_KEY_HERE with an actual Web3Forms access key -->
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                    <input type="hidden" name="subject" value="New Consultation Request from Clinic Website">
+                    
+                    <div class="form-group">
+                        <label for="name">Patient Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter full name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contactInfo">Patient Contact</label>
+                        <input type="text" id="contactInfo" name="contact" required placeholder="Phone number or Email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description of Ailment</label>
+                        <textarea id="description" name="description" rows="5" required placeholder="Briefly describe what you're experiencing..."></textarea>
+                    </div>
+
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <button type="submit" class="btn btn-primary submit-btn">Send Request <i class="fas fa-paper-plane"></i></button>
+                    <p id="formStatus" class="form-status"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container reveal">
+            <div class="about-image">
+                <img src="assets/about.jpg" alt="About Dr. Tahir Clinic">
+                <div class="experience-badge">
+                    <span class="years">15+</span>
+                    <span class="text">Years of Experience</span>
+                </div>
+            </div>
+            <div class="about-text">
+                <h2>About Dr. Tahir <br>Homeopathic Clinic</h2>
+                <p>Dedicated to restoring your health and vitality using natural, safe, and effective homeopathic treatments. We believe in treating the root cause, not just the symptoms.</p>
+                <p>Dr. Tahir has years of extensive clinical experience handling acute and chronic conditions. Our clinic provides a calming environment designed for your comfort and absolute privacy.</p>
+                <a href="#contact" class="btn btn-primary">Find Us Here</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header reveal">
+            <h2>Get In Touch</h2>
+            <p>We're here to answer any questions you may have.</p>
+        </div>
+        <div class="contact-wrapper reveal">
+            <div class="contact-details">
+                <div class="contact-item">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <h3>Email Us</h3>
+                        <p><a href="mailto:info@drtahirclinic.com">info@drtahirclinic.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><i class="fab fa-whatsapp"></i></div>
+                    <div>
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/1234567890">+1 234 567 890</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <h3>Location</h3>
+                        <p>123 Health Avenue, Medical District, City</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon whatsapp" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-map">
+                <!-- Using an iframe embed. We're pointing to a generic map location as a placeholder -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m2!1s0x0%3A0x0!2z!5e0!3m2!1sen!2sus!4v1611234567890!5m2!1sen!2sus" width="100%" height="400" style="border:0; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Dr. Tahir <span>Clinic</span></h2>
+                <p>Healing naturally, effectively, and safely.</p>
+            </div>
+            <p class="copyright">&copy; 2026 Dr. Tahir Homeopathic Clinic. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
